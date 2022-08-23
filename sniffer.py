@@ -12,7 +12,18 @@ def process_packet(packet):
         print(packet.show())
         print(f"\n{'='*40} Packet End {'='*40}\n")
         
+def interfaceAcceptor():
+    interface = input("Enter interface to take a whiff of: ")
+    try: 
+        sniffing(interface)
+    except:
+        print("Interface error.\nTry again.\n\n")
+        interfaceAcceptor()
+
+interfaceAcceptor()
+
 
 # interface name added as arguement e.g wlan0, eth0
-sniffing("wlp3s0")
+
+
 

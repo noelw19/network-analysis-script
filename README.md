@@ -3,6 +3,9 @@ A script to capture packets going in and out of the network.
 
 ----------------------sniffer.py-----------------------------------------
 
+Main thing to keep in mind, you must run sniffer program with sudo in order to sniff packets, otherwise error will occur and program will continue asking for an interface name.
+
+
 
 ----------------------pcapAnalyser.py------------------------------------
 
